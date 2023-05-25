@@ -37,6 +37,10 @@ let teacher:Ref<ITeacher> = ref({
   subjects: [],
   doc: false
 })
+
+let teachers:Ref<Array<ITeacher>> = ref([])
+
+let subject:Ref<string> = ref('')
 </script>
 
 <!-- ESTRUCTURA EN JS
