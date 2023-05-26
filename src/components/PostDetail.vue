@@ -2,12 +2,14 @@
 <div class="post"> 
     <h3>{{ props.title }}</h3>
     <p>{{ props.content }}</p>
+    <input type="text" v-model="message"/>
+    <button @click="handleClick">Di Hola</button>
 
 </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, Ref, ref } from "vue";
 export default defineComponent({
     name: 'PostDetail',
     props: {
@@ -21,8 +23,13 @@ export default defineComponent({
             default: "Post sin contenido"
         }
     },
-    setup(props){
-        return {props}
+    emits: ["sayHi"],
+    setup(props, {emit}){
+        let message:Ref<string> = ref("")
+        const handleClick = () => {
+           emit("sayHi", message.value)
+        }
+        return {props, message, handleClick}
     }
 })
    
