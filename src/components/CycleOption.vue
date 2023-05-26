@@ -1,27 +1,22 @@
 <template>
 <div> 
-    hola mundo
+    hola mundo !!
 </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
+import { onMounted, onUpdated } from 'vue';
 
-export default defineComponent({
-    name: "CycleOption",
-    created(){
-        console.log("created")   
-    },
-    mounted() {
-      console.log("mounted")
-    },
-    updated() {
-       console.log("updated") 
-       },
-    unmounted() {
-        console.log("unmounted")
-    },
+onMounted(() => {
+    console.log("onMounted");
 })
+
+onUpdated(() => {
+    console.log("onUpdated");
+})
+
+
+
 //    OPTIOM API
 // export default defineComponent({
 //     name: "CycleOption",
