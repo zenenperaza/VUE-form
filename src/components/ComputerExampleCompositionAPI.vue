@@ -7,12 +7,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from "vue"
+import { defineComponent, ref, Ref, computed } from "vue"
 
 export default defineComponent({
     name: 'ComputedExample',
     setup(){
-        let message = ref('')
+        let message:Ref<string> = ref('')
         const reverse = computed(() => message.value.split('').reverse().join(''))
         return {message, reverse}
 
