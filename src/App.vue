@@ -1,9 +1,9 @@
 <template>
-  <ComputerExampleOptionAPI />
+  <ComputerExampleCompositionAPI />
 </template>
 
 <script lang="ts" setup>
- import ComputerExampleOptionAPI  from "./components/ComputerExampleOptionAPI.vue";
+ import ComputerExampleCompositionAPI  from "./components/ComputerExampleCompositionAPI.vue";
 </script>
 <style>
 
