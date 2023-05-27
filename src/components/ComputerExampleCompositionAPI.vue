@@ -15,7 +15,6 @@ export default defineComponent({
         let message:Ref<string> = ref('')
         const reverse = computed(() => message.value.split('').reverse().join(''))
         return {message, reverse}
-
     }
 
 })
