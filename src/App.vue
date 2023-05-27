@@ -1,9 +1,9 @@
 <template>
-  <PostList />
+  <ComputerExampleOptionAPI />
 </template>
 
 <script lang="ts" setup>
- import PostList  from "./components/PostList.vue";
+ import ComputerExampleOptionAPI  from "./components/ComputerExampleOptionAPI.vue";
 </script>
 <style>
 
