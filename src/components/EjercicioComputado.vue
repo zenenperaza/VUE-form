@@ -11,7 +11,7 @@
 
     const iva = 21
     let subtotal:Ref<number> = ref(0)
-        const totalIVA = computed(() => (iva*subtotal.value / 100))
+    const totalIVA = computed(() => (iva*subtotal.value / 100))
 
    
 </script>
