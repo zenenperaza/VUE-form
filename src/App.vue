@@ -1,9 +1,9 @@
 <template>
-  <ComputerExampleCompositionAPI />
+  <EjercicioComputado />
 </template>
 
 <script lang="ts" setup>
- import ComputerExampleCompositionAPI  from "./components/ComputerExampleCompositionAPI.vue";
+ import EjercicioComputado  from "./components/EjercicioComputado.vue";
 </script>
 <style>
 
